@@ -3,7 +3,7 @@ kind: Rollout
 metadata:
   name: myweb
 spec:
-  replicas: 8
+  replicas: 4
   selector:
     matchLabels:
       app: myweb
