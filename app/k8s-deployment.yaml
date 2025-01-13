@@ -17,13 +17,7 @@ spec:
         image: pushdown99/myweb:latest
         ports:
         - containerPort: 3000
-  strategy:
-    canary:
-      maxSurge: "25%"    
-      maxUnavailable: 0  
-      steps:
-      - setWeight: 25    
-      - pause: {}        
+      
 ---
 apiVersion: v1
 kind: Service
